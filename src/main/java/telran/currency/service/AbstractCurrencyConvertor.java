@@ -1,10 +1,9 @@
 package telran.currency.service;
 
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class AbstractCurrencyConvertor implements CurrencyConvertor {
-protected HashMap<String, Double> rates; //key - currency ISO code;
+protected Map<String, Double> rates; //key - currency ISO code;
 //value - amount of code's units in 1 EUR
 	@Override
 	public List<String> strongestCurrencies(int amount) {
